@@ -88,11 +88,7 @@ public class Escuadra {
     }
     
     public boolean tieneCapacidadDisponible(){
-        if(this.contarSoldados()<maxSoldadosPorEscuadra){
-            return true;
-        }else{
-            return false;
-        }
+        return this.contarSoldados()<Escuadra.maxSoldadosPorEscuadra;
     }
     
     public ArrayList<Soldado> obtenerSoldadosAptos(){
