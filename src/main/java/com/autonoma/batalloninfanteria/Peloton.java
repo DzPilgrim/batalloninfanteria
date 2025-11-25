@@ -75,8 +75,8 @@ public class Peloton {
         }
     }
     
-    
-    
-    
+    public boolean esPelotonCompleto(){
+        return this.escuadras.size()>=Peloton.maxEscuadras;
+    }
     
 }
