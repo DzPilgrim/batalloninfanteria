@@ -4,6 +4,8 @@
  */
 package com.autonoma.batalloninfanteria;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author hijo
@@ -17,6 +19,8 @@ enum TipoPeloton{
 public class Peloton {
     private String nombre;
     private String comandante;
+    private TipoPeloton tipo;
+    private ArrayList<Escuadra> escuadras;
     private static int maxEscuadras;
     
     
