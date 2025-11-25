@@ -75,5 +75,21 @@ public class Batallon {
         return total_soldados;
     }
     
+    public void agregarPeloton(Peloton p){
+        this.pelotones.add(p);
+    }
+    
+    public boolean removerPelotonPorNombre(String nombre){
+        for(Peloton p: this.pelotones){
+            if(p.getNombre().equals(nombre)){
+                this.pelotones.remove(p);
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
+    
     
 }
