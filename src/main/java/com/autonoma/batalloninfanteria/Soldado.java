@@ -31,7 +31,7 @@ public class Soldado {
     }
 
     public static int getEdadMinimaServicio() {
-        return edadMinimaServicio;
+        return Soldado.edadMinimaServicio;
     }
 
     public String getNombre() {
@@ -47,7 +47,7 @@ public class Soldado {
     }
 
     public boolean setEdad(int edad) {
-        if (edad >= edadMinimaServicio){
+        if (edad >= Soldado.edadMinimaServicio){
             this.edad = edad;
             return true;
         }else{
@@ -84,7 +84,7 @@ public class Soldado {
     }
     
     public boolean esAptoParaMision(){
-        if(this.edad >= edadMinimaServicio && this.estadoSalud.equals("APTO")){
+        if(this.edad >= Soldado.edadMinimaServicio && this.estadoSalud.equals("APTO")){
             return true;
         }else{
             return false;
