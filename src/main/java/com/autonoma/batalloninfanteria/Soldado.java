@@ -105,5 +105,5 @@ public class Soldado {
         }else{
             return false;
         }
-    }    
+    } 
 }

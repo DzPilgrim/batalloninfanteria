@@ -79,4 +79,23 @@ public class Peloton {
         return this.escuadras.size()>=Peloton.maxEscuadras;
     }
     
+    public boolean agregarEscuadra(Escuadra e){
+        if(this.esPelotonCompleto()){
+            return false;
+        }else{
+            this.escuadras.add(e);
+            return true;
+        }
+    }
+    
+    public boolean removerEscuadraPorNombre(String nombre){
+        for(Escuadra escuadra: this.escuadras){
+            if(escuadra.getNombre().equals(nombre)){
+                this.escuadras.remove(escuadra);
+                return true;
+            }
+        }
+        return false;
+    }
+    
 }
