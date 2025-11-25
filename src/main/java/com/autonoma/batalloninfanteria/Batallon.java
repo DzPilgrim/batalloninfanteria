@@ -89,6 +89,17 @@ public class Batallon {
         return false;
     }
     
+    public String generarReporteResumen(){
+        return "Batallon: " + nombre 
+                + "\nUbicacion: " + ubicacion 
+                + "\nTipo: " + tipo 
+                + "\nPelotones: " + this.contarPelotones()
+                + "\nSoldados: " + this.contarTotalSoldados()
+                + "\nCodigo Otan: " + Batallon.getCodigoOTAN();
+    }
+
+    
+    
     
     
     
