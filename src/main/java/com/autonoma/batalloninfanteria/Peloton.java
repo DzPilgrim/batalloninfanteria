@@ -98,4 +98,16 @@ public class Peloton {
         return false;
     }
     
+    public int contarEscuadras(){
+        return this.escuadras.size();
+    }
+    
+    public int contarSoldados(){
+        int cantidadSoldados = 0;
+        for(Escuadra e: this.escuadras){
+            cantidadSoldados += e.contarSoldados();
+        }
+        return cantidadSoldados;
+    }
+    
 }
