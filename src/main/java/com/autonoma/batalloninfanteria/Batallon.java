@@ -4,10 +4,22 @@
  */
 package com.autonoma.batalloninfanteria;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author hijo
  */
+enum TipoBatallon{
+    LIGERO,
+    MECANIZADO,
+    AEROTRANSPORTADO
+}
+
 public class Batallon {
-    
+    private String nombre;
+    private String ubicacion;
+    private TipoBatallon tipo;
+    private ArrayList<Peloton> pelotones;
+    private static String codigoOTAN ="";
 }
