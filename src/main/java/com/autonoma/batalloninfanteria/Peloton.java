@@ -29,6 +29,52 @@ public class Peloton {
         this.tipo = tipo;
         this.escuadras = new ArrayList<Escuadra>();
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getComandante() {
+        return comandante;
+    }
+
+    public void setComandante(String comandante) {
+        this.comandante = comandante;
+    }
+
+    public TipoPeloton getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoPeloton tipo) {
+        this.tipo = tipo;
+    }
+
+    public ArrayList<Escuadra> getEscuadras() {
+        return escuadras;
+    }
+
+    public void setEscuadras(ArrayList<Escuadra> escuadras) {
+        this.escuadras = escuadras;
+    }
+
+    public static int getMaxEscuadras() {
+        return maxEscuadras;
+    }
+
+    public static boolean cambiarMaxEscuadras(int nuevoMax) {
+        if(nuevoMax>=0){
+            Peloton.maxEscuadras = nuevoMax;
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
     
     
     
