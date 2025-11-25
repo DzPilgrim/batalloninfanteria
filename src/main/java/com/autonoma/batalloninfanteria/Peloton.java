@@ -22,6 +22,15 @@ public class Peloton {
     private TipoPeloton tipo;
     private ArrayList<Escuadra> escuadras;
     private static int maxEscuadras;
+
+    public Peloton(String nombre, String comandante, TipoPeloton tipo) {
+        this.nombre = nombre;
+        this.comandante = comandante;
+        this.tipo = tipo;
+        this.escuadras = new ArrayList<Escuadra>();
+    }
+    
+    
     
     
 }
