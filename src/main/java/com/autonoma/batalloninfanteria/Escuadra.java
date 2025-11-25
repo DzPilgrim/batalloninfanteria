@@ -23,11 +23,11 @@ public class Escuadra {
     private TipoEscuadra tipo;
     private ArrayList<Soldado> soldados;
 
-    public Escuadra(String nombre, int numero, TipoEscuadra tipo, ArrayList<Soldado> soldados) {
+    public Escuadra(String nombre, int numero, TipoEscuadra tipo) {
         this.nombre = nombre;
         this.numero = numero;
         this.tipo = tipo;
-        this.soldados = soldados;
+        this.soldados = new ArrayList<Soldado>();
     }
 
     public static int getMaxSoldadosPorEscuadra() {
