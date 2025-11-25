@@ -75,12 +75,14 @@ public class Escuadra {
         }
     }
     
-    public void removerSoldadoPorNombre(String nombre){
+    public boolean removerSoldadoPorNombre(String nombre){
         for(Soldado soldado: this.soldados){
             if(soldado.getNombre().equals(nombre)){
                 this.soldados.remove(soldado);
+                return true;
             }
         }
+        return false;
     }
     
     public int contarSoldados(){
