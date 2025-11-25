@@ -63,5 +63,17 @@ public class Batallon {
         Batallon.codigoOTAN = nuevoCodigo;
     }
     
+    public int contarPelotones(){
+        return this.pelotones.size();
+    }
+    
+    public int contarTotalSoldados(){
+        int total_soldados = 0;
+        for(Peloton p: this.pelotones){
+            total_soldados += p.contarSoldados();
+        }
+        return total_soldados;
+    }
+    
     
 }
